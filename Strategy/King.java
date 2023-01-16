@@ -1,7 +1,10 @@
+
+
 public class King extends Character {
+
     public King(String name) {
         super(name);
-        weaponBehavior = new WeaponSword();
+        setWeaponBehavior(new WeaponSword());
     }
 
     public String toString() {

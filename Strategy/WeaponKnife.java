@@ -1,16 +1,16 @@
 import java.util.Random;
-public class WeaponKnife implements WeaponBeavior {
+public class WeaponKnife implements WeaponBehavior {
     public String attack() {
+        Random rand = new Random();
         int random = rand.nextInt(3);
-        switch(random)
+        switch(random) {
             case 0:
                 return "SLice with knife";
-                break;
             case 1:
                 return "Jab with knife";
-                break;
             case 2:
                 return "Sneak up on opponent with knife";
-                break;
+        }
+        return "0";
     }
 }
