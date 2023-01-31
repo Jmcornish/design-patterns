@@ -1,5 +1,4 @@
 
-
 public class TownDriver {
 	public static void main(String[] args) {
 		System.out.println("A Happy Little City");
