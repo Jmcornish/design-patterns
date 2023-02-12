@@ -1,6 +1,11 @@
 package factory;
-
+/** This class implements ToyStore
+ * @Author Jadon Cornish
+ */
 public class FisherPriceStore implements ToyStore {
+    /**
+     * @return the desired puzzle based on the type of toy wanted
+     */
     public Puzzle createPuzzle(String type) {
         switch(type) {
             case "color":
@@ -12,6 +17,9 @@ public class FisherPriceStore implements ToyStore {
         }
         return null;
     }
+    /**
+     * @return calls createPuzzle and constructs a String using the assemble and boxPuzzle methods
+     */
     public String orderPuzzle(String type) {
         String order = createPuzzle(type).assemble() +
         createPuzzle(type).boxPuzzle();

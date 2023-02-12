@@ -1,5 +1,8 @@
 package factory;
 import java.util.*;
+/** defines the class WoodColorPuzzle which extends Puzzle
+ * @author Jadon Cornish
+ */
 public class WoodColorPuzzle extends Puzzle{
     public WoodColorPuzzle() {
         this.name = "Color Puzzle by Melissa and Doug";
